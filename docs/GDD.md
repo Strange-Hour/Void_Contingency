@@ -93,6 +93,19 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
 - Trade/inventory management
 - Shield management
 
+### 5. Medical/Science
+
+- Crew health monitoring and management
+- Life sign detection and analysis
+- Medical emergency response
+- Alien technology research and analysis
+- Biological hazard detection
+- Medical supply management
+- Research data collection and analysis
+- Alien artifact study
+- Crew performance optimization
+- Emergency medical protocols
+
 ## Ship Systems
 
 ### Core Systems
@@ -411,6 +424,40 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Communication interference
    - Scan resolution adjustment
 
+#### Medical/Science Role - "The Researcher"
+
+### Primary Combat Interface
+
+- Alien technology research display
+- Resource detection and analysis
+- Crew health monitoring and analysis
+- Medical emergency response interface
+- Biological hazard detection and analysis
+
+### Core Combat Mechanics
+
+1. **Alien Technology Research**
+
+   - Alien artifact study and analysis
+   - Resource scanning and detection
+   - Crew health monitoring and analysis
+   - Medical emergency response
+   - Biological hazard detection and analysis
+
+2. **Crew Health Monitoring**
+
+   - Health status monitoring
+   - Stress level analysis
+   - Medical emergency response
+   - Biological hazard detection
+
+3. **Resource Management**
+
+   - Resource scanning and detection
+   - Alien technology research
+   - Medical supply management
+   - Research data collection and analysis
+
 ### Cross-Role Interactions
 
 #### Example Scenarios
@@ -421,6 +468,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Operations: Identifies enemy weak points
    - Weapons: Times weapons for synchronized strike
    - Engineering: Provides power surge to weapons
+   - Medical: Monitors crew stress levels during combat
 
 2. **Emergency Response**
 
@@ -428,6 +476,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Captain: Initiates evasive maneuvers
    - Engineering: Reinforces affected systems
    - Weapons: Deploys countermeasures
+   - Medical: Prepares for potential injuries
 
 3. **System Failure Management**
 
@@ -435,6 +484,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Captain: Adjusts tactics for limited capability
    - Operations: Reroutes essential functions
    - Weapons: Adapts to power limitations
+   - Medical: Monitors crew stress and health
 
 4. **Ambush Recovery**
 
@@ -442,6 +492,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Engineering: Performs emergency power-up sequence
    - Weapons: Prepares rapid response weapons
    - Captain: Plans immediate escape vector
+   - Medical: Prepares emergency medical protocols
 
 5. **Critical System Defense**
 
@@ -449,6 +500,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Operations: Projects incoming attack patterns
    - Captain: Maintains defensive positioning
    - Weapons: Establishes protective fire coverage
+   - Medical: Monitors crew performance under stress
 
 6. **Resource Collection Under Fire**
 
@@ -456,6 +508,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Captain: Maintains position within collection range
    - Weapons: Provides covering fire
    - Engineering: Balances collection and combat power
+   - Medical: Monitors crew fatigue levels
 
 7. **Shield Breach Response**
 
@@ -463,6 +516,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Engineering: Initiates emergency repairs
    - Captain: Rotates ship to protect exposure
    - Weapons: Focuses fire on immediate threats
+   - Medical: Prepares for potential radiation exposure
 
 8. **Environmental Hazard Navigation**
 
@@ -470,6 +524,7 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Captain: Plans safe trajectory
    - Engineering: Reinforces affected systems
    - Weapons: Clears obstacles if possible
+   - Medical: Monitors environmental health risks
 
 9. **Multi-Target Engagement**
 
@@ -477,12 +532,30 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
    - Weapons: Establishes firing solutions
    - Engineering: Optimizes power distribution
    - Captain: Maintains tactical positioning
+   - Medical: Monitors crew stress levels
 
 10. **Emergency FTL Preparation**
+
     - Engineering: Charges FTL drive
     - Operations: Calculates safe jump coordinates
     - Weapons: Maintains defensive screen
     - Captain: Aligns ship for jump vector
+    - Medical: Prepares crew for FTL effects
+
+11. **Alien Technology Research**
+
+    - Medical: Analyzes alien artifacts
+    - Engineering: Provides power for research
+    - Operations: Scans for additional artifacts
+    - Captain: Coordinates research priorities
+    - Weapons: Stands guard during research
+
+12. **Medical Emergency Response**
+    - Medical: Coordinates emergency response
+    - Engineering: Provides power to medical systems
+    - Operations: Locates nearest medical supplies
+    - Captain: Adjusts ship position for optimal response
+    - Weapons: Maintains defensive perimeter
 
 #### Communication Tools
 
@@ -568,6 +641,300 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
 - Advanced repair systems
 - Emergency backup systems
 
+## Away Team Scenarios
+
+### Core Mechanics
+
+- Players can leave the ship to explore derelict stations, ships, and anomalies
+- Team composition and roles shift during away missions
+- Real-time coordination between ship crew and away team
+- Limited oxygen and power supply for away team members
+- Environmental hazards and alien threats in external locations
+
+### Role Responsibilities
+
+#### Captain (Away Team Leader)
+
+- Coordinates team movement and objectives
+- Makes tactical decisions for the away team
+- Manages mission priorities and time constraints
+- Communicates with ship crew for support
+- Handles emergency protocols and evacuation
+
+#### Engineering (Technical Specialist)
+
+- Interacts with alien technology and systems
+- Breaches sealed doors and security systems
+- Repairs or bypasses damaged equipment
+- Manages power and environmental systems
+- Provides technical support to other team members
+
+#### Weapons Officer (Security Specialist)
+
+- Provides armed escort for the team
+- Handles hostile encounters and threats
+- Manages ammunition and weapon systems
+- Sets up defensive positions
+- Coordinates with ship's weapons for support
+
+#### Operations Officer (Ship Support)
+
+- Remains on ship during away missions
+- Provides real-time sensor data to away team
+- Maps station/ship layouts
+- Identifies hazards and resources
+- Coordinates ship positioning for support
+- Manages ship systems during away missions
+
+#### Medical Officer (Science Specialist)
+
+- Monitors team health and vital signs
+- Handles first contact protocols
+- Analyzes alien life forms and hazards
+- Manages medical emergencies
+- Conducts scientific research on-site
+
+### Example Scenarios
+
+#### Derelict Space Station Investigation
+
+1. **Initial Approach**
+
+   - Operations: Scans station for life signs and structural integrity
+   - Captain: Plans entry points and evacuation routes
+   - Engineering: Prepares cutting tools and emergency equipment
+   - Weapons: Readies defensive gear and weapons
+   - Medical: Prepares medical supplies and scanning equipment
+
+2. **Station Entry**
+
+   - Engineering: Breaches airlock or finds alternative entry
+   - Operations: Guides team through station layout
+   - Weapons: Secures entry point and maintains perimeter
+   - Medical: Monitors environmental hazards
+   - Captain: Coordinates team movement
+
+3. **Station Exploration**
+
+   - Operations: Maps new areas and identifies points of interest
+   - Engineering: Interacts with station systems and technology
+   - Weapons: Handles security systems and potential threats
+   - Medical: Analyzes alien artifacts and life forms
+   - Captain: Manages mission objectives and time
+
+4. **Emergency Response**
+   - Medical: Handles injuries and environmental hazards
+   - Engineering: Manages system failures and power issues
+   - Weapons: Provides cover during evacuation
+   - Operations: Guides escape routes
+   - Captain: Coordinates emergency protocols
+
+#### Alien Ship Salvage Operation
+
+1. **Ship Analysis**
+
+   - Operations: Maps alien ship layout and identifies valuable systems
+   - Engineering: Analyzes alien technology and power systems
+   - Medical: Scans for biological hazards and life forms
+   - Weapons: Identifies defensive systems and threats
+   - Captain: Plans salvage priorities
+
+2. **Entry and Security**
+
+   - Engineering: Breaches alien ship hull or finds entry points
+   - Weapons: Secures entry points and neutralizes threats
+   - Medical: Monitors for biological contamination
+   - Operations: Guides team through ship layout
+   - Captain: Coordinates salvage operations
+
+3. **Salvage Operations**
+
+   - Engineering: Extracts valuable technology and systems
+   - Medical: Analyzes alien artifacts and specimens
+   - Weapons: Maintains security during operations
+   - Operations: Identifies valuable resources
+   - Captain: Manages time and resource priorities
+
+4. **Extraction**
+   - Captain: Coordinates return to ship
+   - Engineering: Secures salvaged materials
+   - Weapons: Provides cover during extraction
+   - Medical: Ensures team health during return
+   - Operations: Guides safe return path
+
+#### Anomaly Investigation
+
+1. **Anomaly Analysis**
+
+   - Operations: Scans anomaly for properties and dangers
+   - Medical: Analyzes biological effects
+   - Engineering: Studies technological aspects
+   - Weapons: Prepares for potential threats
+   - Captain: Plans investigation approach
+
+2. **Close Investigation**
+
+   - Medical: Monitors team for anomaly effects
+   - Engineering: Interacts with anomaly technology
+   - Operations: Maps anomaly structure
+   - Weapons: Handles security concerns
+   - Captain: Manages investigation priorities
+
+3. **Sample Collection**
+
+   - Medical: Safely collects biological samples
+   - Engineering: Extracts technological components
+   - Operations: Identifies valuable data
+   - Weapons: Maintains security perimeter
+   - Captain: Coordinates collection efforts
+
+4. **Return and Analysis**
+   - Captain: Coordinates safe return
+   - Medical: Ensures team health
+   - Engineering: Secures collected samples
+   - Operations: Guides return path
+   - Weapons: Provides security during return
+
+### Equipment and Resources
+
+#### Standard Away Team Gear
+
+- Oxygen supply and monitoring
+- Environmental protection suits
+- Communication devices
+- Emergency medical supplies
+- Basic tools and equipment
+
+#### Role-Specific Equipment
+
+- Engineering: Technical tools and scanners
+- Weapons: Combat gear and weapons
+- Medical: Medical supplies and scanners
+- Operations: Ship-based sensor equipment
+- Captain: Command and coordination tools
+
+#### Environmental Hazards
+
+- Radiation zones
+- Toxic atmospheres
+- Extreme temperatures
+- Zero gravity areas
+- Alien biological hazards
+
+### Away Team Inventory System
+
+Each crew member can carry two specialized tools or items when leaving the ship. This limited inventory forces strategic planning and coordination between team members.
+
+#### Available Tools and Items
+
+##### Engineering Tools
+
+- **Cutting Torch**: Breach sealed doors and cut through obstacles
+- **Power Pack**: Provide emergency power to systems
+- **Technical Scanner**: Analyze and interface with alien technology
+- **Emergency Repair Kit**: Fix critical systems in the field
+- **Environmental Control Unit**: Stabilize hazardous environments
+
+##### Weapons Officer Equipment
+
+- **Combat Rifle**: Standard weapon for self-defense
+- **Tactical Shield**: Personal shield generator
+- **Grenade Pack**: Various types of grenades
+- **Combat Scanner**: Detect and identify threats
+- **Emergency Beacon**: Signal for immediate extraction
+
+##### Medical Officer Supplies
+
+- **Medkit**: Basic medical supplies and tools
+- **Life Sign Scanner**: Detect and analyze life forms
+- **Emergency Stim**: Temporary performance enhancement
+- **Biological Analyzer**: Study alien life forms
+- **Containment Unit**: Safely store biological samples
+
+##### Captain Equipment
+
+- **Command Tablet**: Enhanced communication and mapping
+- **Tactical Scanner**: Strategic analysis and planning
+- **Emergency Protocol Module**: Quick access to procedures
+- **Navigation Beacon**: Mark important locations
+- **Crew Status Monitor**: Track team member status
+
+#### Example Loadouts and Scenarios
+
+##### Derelict Station Investigation
+
+1. **Recommended Loadouts**
+
+   - Engineering: Cutting Torch + Technical Scanner
+   - Weapons: Combat Rifle + Tactical Shield
+   - Medical: Life Sign Scanner + Medkit
+   - Captain: Command Tablet + Navigation Beacon
+
+2. **Scenario Impact**
+   - Cutting Torch allows for alternative entry points
+   - Technical Scanner helps interface with station systems
+   - Life Sign Scanner detects potential threats
+   - Navigation Beacon helps track exploration progress
+
+##### Alien Ship Salvage
+
+1. **Recommended Loadouts**
+
+   - Engineering: Power Pack + Technical Scanner
+   - Weapons: Combat Rifle + Combat Scanner
+   - Medical: Biological Analyzer + Containment Unit
+   - Captain: Tactical Scanner + Emergency Protocol Module
+
+2. **Scenario Impact**
+   - Power Pack enables interaction with alien systems
+   - Combat Scanner identifies defensive systems
+   - Biological Analyzer studies alien life forms
+   - Emergency Protocol Module handles unexpected situations
+
+##### Anomaly Investigation
+
+1. **Recommended Loadouts**
+
+   - Engineering: Environmental Control Unit + Technical Scanner
+   - Weapons: Tactical Shield + Combat Scanner
+   - Medical: Life Sign Scanner + Biological Analyzer
+   - Captain: Command Tablet + Navigation Beacon
+
+2. **Scenario Impact**
+   - Environmental Control Unit stabilizes anomaly effects
+   - Tactical Shield protects from environmental hazards
+   - Life Sign Scanner monitors team health
+   - Navigation Beacon tracks anomaly boundaries
+
+#### Strategic Considerations
+
+1. **Mission Planning**
+
+   - Team must coordinate tool selection
+   - Consider environmental hazards
+   - Plan for potential emergencies
+   - Balance offensive and defensive capabilities
+
+2. **Resource Management**
+
+   - Limited tool durability
+   - Power consumption considerations
+   - Emergency backup options
+   - Tool combination effects
+
+3. **Risk Assessment**
+
+   - Choose between specialized and versatile tools
+   - Balance personal protection vs. mission capability
+   - Consider team composition and tool distribution
+   - Plan for worst-case scenarios
+
+4. **Adaptability**
+   - Tools can be shared between team members
+   - Some tools have multiple uses
+   - Creative use of limited resources
+   - Emergency improvisation options
+
 ## Multiplayer Mechanics
 
 ### Crew Interaction
@@ -593,6 +960,135 @@ The player(s) operate a spaceship from a top-down 2D perspective, exploring proc
 - Discover ship logs and lore
 - Upgrade space station facilities (home base)
 - Unlock additional crew positions and abilities
+
+## Role-Specific Ship Augmentations
+
+Each crew role has access to 4 augmentation slots at their station, allowing for deep customization of gameplay mechanics. These augmentations persist throughout the run and can be combined to create unique playstyles.
+
+### Captain Augmentations
+
+- **Tactical Overlay Enhancement**: Improved enemy tracking and threat assessment
+- **Emergency Protocol Optimizer**: Faster crew response times during crises
+- **Navigation Matrix**: Enhanced FTL jump precision and reduced cooldown
+- **Command Network**: Improved crew coordination and status sharing
+- **Tactical Retreat Module**: Faster escape vector calculation
+- **Resource Prioritization Matrix**: Better resource allocation suggestions
+
+### Engineering Augmentations
+
+- **Power Distribution Network**: More efficient power routing
+- **Emergency Backup Systems**: Additional power reserves
+- **Heat Management Array**: Better heat dissipation
+- **Repair Drone Swarm**: Increased drone deployment and efficiency
+- **System Overcharge Module**: Temporary system performance boost
+- **Emergency Patch Protocol**: Faster hull breach repairs
+
+### Weapons Officer Augmentations
+
+- **Targeting Assistance Matrix**: Improved weapon accuracy
+- **Ammunition Optimization System**: Better ammo efficiency
+- **Weapon Heat Sink**: Reduced weapon cooldown times
+- **Defensive Drone Network**: Enhanced drone control
+- **Chain Fire Module**: Faster weapon cycling
+- **Emergency Weapon Vent**: Quick heat dissipation
+
+### Operations Officer Augmentations
+
+- **Sensor Enhancement Array**: Improved scanning range
+- **Shield Modulation Matrix**: Better shield efficiency
+- **Resource Detection Network**: Enhanced resource scanning
+- **Emergency Beacon System**: Faster distress signal deployment
+- **Electronic Warfare Suite**: Improved enemy disruption
+- **Environmental Analysis Module**: Better hazard detection
+
+### Medical Officer Augmentations
+
+- **Life Sign Scanner**: Enhanced crew health monitoring
+- **Medical Database**: Improved diagnosis and treatment
+- **Research Assistant**: Better alien technology analysis
+- **Emergency Response System**: Faster medical response
+- **Biological Hazard Detector**: Early warning for bio-threats
+- **Medical Supply Optimizer**: Better resource management
+
+## Character Items
+
+Players can collect and use various items throughout their run to enhance their capabilities. These items are run-specific and can be found through exploration, combat rewards, or special events.
+
+### Captain Items
+
+- **Command Badge**: Increases crew coordination effectiveness
+- **Tactical Manual**: Improves combat decision making
+- **Leadership Medallion**: Enhances crew morale and performance
+- **Navigation Charts**: Reveals additional sector information
+- **Emergency Protocol Handbook**: Faster crisis response
+
+### Engineering Items
+
+- **Power Core Crystal**: Increases power generation
+- **Heat Sink Module**: Better heat management
+- **Repair Kit**: Faster system repairs
+- **Emergency Power Cell**: Temporary power boost
+- **System Diagnostic Tool**: Better system analysis
+
+### Weapons Officer Items
+
+- **Targeting Computer**: Improved weapon accuracy
+- **Ammunition Pack**: Additional ammo reserves
+- **Weapon Coolant**: Reduced weapon heat
+- **Combat Drone Module**: Enhanced drone capabilities
+- **Emergency Weapon System**: Backup weapon deployment
+
+### Operations Officer Items
+
+- **Sensor Enhancement**: Improved scanning capabilities
+- **Shield Modulator**: Better shield performance
+- **Resource Scanner**: Enhanced resource detection
+- **Emergency Beacon**: Faster distress signal
+- **Electronic Warfare Module**: Better enemy disruption
+
+### Medical Officer Items
+
+- **Medical Scanner**: Enhanced health monitoring
+- **Research Kit**: Better alien technology analysis
+- **Emergency Medkit**: Improved healing capabilities
+- **Biological Analyzer**: Better hazard detection
+- **Medical Database**: Enhanced treatment options
+
+## Endless Mode
+
+A special game mode that allows players to continue their run indefinitely, with increasing difficulty and rewards.
+
+### New Game Plus Mechanics
+
+- Players retain all collected items and ship augmentations
+- Each sector increases in difficulty
+- New enemy types and environmental hazards appear
+- Enhanced rewards and rare item drops
+- Special "Void Corruption" mechanics that add unique challenges
+
+### Void Corruption
+
+- Progressive difficulty scaling
+- New enemy behaviors and patterns
+- Environmental hazards become more severe
+- Special "corrupted" items with powerful effects but drawbacks
+- Unique sector modifiers that change gameplay
+
+### Endless Mode Progression
+
+- Sector difficulty increases with each completion
+- New enemy types and boss encounters
+- Special "Void Anomalies" that provide unique challenges
+- Enhanced rewards for surviving longer
+- Global leaderboard system
+
+### Void Anomalies
+
+- **Time Dilation**: Alters game speed and mechanics
+- **Energy Surge**: Affects power management
+- **Gravity Well**: Changes movement and combat
+- **Radiation Storm**: Impacts ship systems
+- **Void Rift**: Creates unique combat scenarios
 
 ## Camera System
 
