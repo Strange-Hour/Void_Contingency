@@ -22,6 +22,11 @@ public:
     void shutdown();    // Clean up SDL resources
     void update();      // Process input events
 
+    // Window access
+    SDL_Window* get_window() const {
+        return window_;
+    }
+
     // Keyboard input methods
     bool is_key_pressed(SDL_Keycode key) const;
     void register_key_callback(SDL_Keycode key, KeyAction action, std::function<void()> callback);
