@@ -128,7 +128,9 @@ Currently in early development. More details coming soon.
 
 #### Option 1: Automated Build (Recommended)
 
-Run the build script from the project root:
+##### Windows
+
+Run the PowerShell build script from the project root:
 
 ```powershell
 .\scripts\build.ps1
@@ -147,10 +149,27 @@ If you encounter a PowerShell execution policy error, you can either:
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
-By default, this will build in Debug mode. To specify a different build type:
+##### Linux
+
+Run the shell script from the project root:
+
+```bash
+chmod +x ./scripts/build.sh  # Make the script executable (first time only)
+./scripts/build.sh
+```
+
+By default, both scripts will build in Debug mode. To specify a different build type:
+
+Windows:
 
 ```powershell
 .\scripts\build.ps1 -BuildType Release
+```
+
+Linux:
+
+```bash
+./scripts/build.sh Release
 ```
 
 Available build types:
