@@ -1,8 +1,8 @@
 # Add test executable
 add_executable(unit_tests
   unit/main.cpp
-
-  # Add test files here
+  unit/core/example_test.cpp
+  unit/core/GameTest.cpp
 )
 
 # Link test libraries
@@ -13,5 +13,5 @@ target_link_libraries(unit_tests
   ${PROJECT_NAME}_lib
 )
 
-# Add tests to CTest
-add_test(NAME unit_tests COMMAND unit_tests)
+include(GoogleTest)
+gtest_discover_tests(unit_tests)

@@ -5,18 +5,20 @@ namespace core {
 
 class Engine {
 public:
+    // Singleton pattern implementation
     static Engine& get_instance();
 
-    void initialize();
-    void shutdown();
+    // Core engine lifecycle methods
+    void initialize();  // Sets up engine systems
+    void shutdown();    // Cleans up engine resources
 
-    // Prevent copying
+    // Prevent copying to maintain singleton pattern
     Engine(const Engine&) = delete;
     Engine& operator=(const Engine&) = delete;
 
 private:
-    Engine() = default;
-    ~Engine() = default;
+    Engine() = default;   // Private constructor
+    ~Engine() = default;  // Private destructor
 };
 
 }  // namespace core
