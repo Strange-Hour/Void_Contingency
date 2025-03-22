@@ -229,6 +229,69 @@ cd build
 ctest
 ```
 
+## Running the Game
+
+After successfully building the project, you can run the game using the following instructions:
+
+### Windows
+
+1. Navigate to the build directory:
+
+   ```powershell
+   cd build
+   ```
+
+2. Run the executable:
+
+   ```powershell
+   .\bin\VoidContingency.exe
+   ```
+
+   If you're using Visual Studio, you can also run the game directly from the IDE by:
+
+   1. Opening the solution file (`VoidContingency.sln`) in Visual Studio
+   2. Setting `VoidContingency` as the startup project
+   3. Pressing F5 or clicking the "Start" button
+
+### Linux
+
+1. Navigate to the build directory:
+
+   ```bash
+   cd build
+   ```
+
+2. Run the executable:
+
+   ```bash
+   ./bin/VoidContingency
+   ```
+
+   If you encounter a permission error, you may need to make the executable file executable:
+
+   ```bash
+   chmod +x ./bin/VoidContingency
+   ```
+
+### Command Line Arguments
+
+The game supports the following command line arguments:
+
+- `--debug`: Enable debug mode with additional logging
+- `--fullscreen`: Start the game in fullscreen mode
+- `--windowed`: Start the game in windowed mode
+- `--resolution <width>x<height>`: Set a specific resolution (e.g., `--resolution 1920x1080`)
+
+Example usage:
+
+```bash
+# Windows
+.\bin\VoidContingency.exe --fullscreen --resolution 1920x1080
+
+# Linux
+./bin/VoidContingency --fullscreen --resolution 1920x1080
+```
+
 ## Contributing
 
 [Contribution guidelines will be added as development progresses]
