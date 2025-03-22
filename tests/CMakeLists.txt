@@ -1,6 +1,3 @@
-# Find GTest package
-find_package(GTest REQUIRED)
-
 # Add test executable
 add_executable(unit_tests
   unit/main.cpp
@@ -11,9 +8,9 @@ add_executable(unit_tests
 # Link test libraries
 target_link_libraries(unit_tests
   PRIVATE
-  GTest::GTest
-  GTest::Main
-  ${PROJECT_NAME}
+  gtest
+  gtest_main
+  ${PROJECT_NAME}_lib
 )
 
 # Add tests to CTest

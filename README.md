@@ -116,6 +116,100 @@ Currently in early development. More details coming soon.
 
 [Installation and setup instructions will be added as development progresses]
 
+## Building and Compilation
+
+### Prerequisites
+
+- CMake 3.15 or higher
+- C++17 compatible compiler
+- PowerShell (for using the automated build script)
+
+### Building the Project
+
+#### Option 1: Automated Build (Recommended)
+
+Run the build script from the project root:
+
+```powershell
+.\scripts\build.ps1
+```
+
+If you encounter a PowerShell execution policy error, you can either:
+
+1. Run the script with a bypass for this session:
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\scripts\build.ps1
+   ```
+
+2. Or permanently allow signed scripts for your user account:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+
+By default, this will build in Debug mode. To specify a different build type:
+
+```powershell
+.\scripts\build.ps1 -BuildType Release
+```
+
+Available build types:
+
+- Debug (default)
+- Release
+- RelWithDebInfo
+- MinSizeRel
+
+The script will:
+
+- Check for required prerequisites
+- Create the build directory if needed
+- Configure and build the project
+- Optionally run tests
+- Show the location of the compiled executable
+
+#### Option 2: Manual Build
+
+If you prefer to build manually, follow these steps:
+
+1. Create a build directory and navigate to it:
+
+   ```bash
+   mkdir build
+   cd build
+   ```
+
+2. Configure the project with CMake:
+
+   ```bash
+   cmake ..
+   ```
+
+   For a specific build type (Debug, Release, RelWithDebInfo, MinSizeRel):
+
+   ```bash
+   cmake -DCMAKE_BUILD_TYPE=Release ..
+   ```
+
+3. Build the project:
+   ```bash
+   cmake --build .
+   ```
+   Or use your system's build tool directly:
+   - Windows: `msbuild VoidContingency.sln`
+   - Linux/macOS: `make`
+
+The compiled executable will be located in the `build/bin` directory.
+
+### Running Tests
+
+After building, you can run the test suite:
+
+```bash
+cd build
+ctest
+```
+
 ## Contributing
 
 [Contribution guidelines will be added as development progresses]

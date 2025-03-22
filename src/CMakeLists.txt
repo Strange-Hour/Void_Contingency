@@ -11,19 +11,23 @@ file(GLOB_RECURSE SOURCES
   "utils/*.cpp"
 )
 
-# Create main executable
-add_executable(${PROJECT_NAME} ${SOURCES})
+# Create library target
+add_library(${PROJECT_NAME}_lib STATIC ${SOURCES})
 
-# Include directories
-target_include_directories(${PROJECT_NAME}
-  PRIVATE
+# Include directories for library
+target_include_directories(${PROJECT_NAME}_lib
+  PUBLIC
   ${CMAKE_SOURCE_DIR}/include
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-# Link libraries
+# Create main executable
+add_executable(${PROJECT_NAME} main.cpp)
+
+# Link main executable with library
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
+  ${PROJECT_NAME}_lib
 
   # Add external libraries here
 )
