@@ -21,6 +21,12 @@ target_include_directories(${PROJECT_NAME}_lib
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+# Link library with dependencies
+target_link_libraries(${PROJECT_NAME}_lib
+  PUBLIC
+  SDL2::SDL2
+)
+
 # Create main executable
 add_executable(${PROJECT_NAME} main.cpp)
 
@@ -28,7 +34,4 @@ add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
   ${PROJECT_NAME}_lib
-  SDL2::SDL2
-
-  # Add external libraries here
 )
