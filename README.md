@@ -122,7 +122,8 @@ Currently in early development. More details coming soon.
 
 - CMake 3.15 or higher
 - C++17 compatible compiler
-- PowerShell (for using the automated build script)
+- PowerShell (for using the automated build script on Windows)
+- Xcode Command Line Tools (for macOS)
 
 ### Building the Project
 
@@ -158,15 +159,43 @@ chmod +x ./scripts/build.sh  # Make the script executable (first time only)
 ./scripts/build.sh
 ```
 
-By default, both scripts will build in Debug mode. To specify a different build type:
+By default, the script will build in Debug mode. To specify a different build type:
 
-Windows:
-
-```powershell
-.\scripts\build.ps1 -BuildType Release
+```bash
+./scripts/build.sh Release
 ```
 
-Linux:
+Available build types:
+
+- Debug (default)
+- Release
+- RelWithDebInfo
+- MinSizeRel
+
+The script will:
+
+- Check for required prerequisites
+- Create the build directory if needed
+- Configure and build the project
+- Optionally run tests
+- Show the location of the compiled executable
+
+##### macOS
+
+First, ensure you have Xcode Command Line Tools installed:
+
+```bash
+xcode-select --install
+```
+
+Then run the shell script from the project root:
+
+```bash
+chmod +x ./scripts/build.sh  # Make the script executable (first time only)
+./scripts/build.sh
+```
+
+By default, the script will build in Debug mode. To specify a different build type:
 
 ```bash
 ./scripts/build.sh Release
@@ -217,6 +246,7 @@ If you prefer to build manually, follow these steps:
    Or use your system's build tool directly:
    - Windows: `msbuild VoidContingency.sln`
    - Linux/macOS: `make`
+   - macOS (with Xcode): `xcodebuild -project VoidContingency.xcodeproj`
 
 The compiled executable will be located in the `build/bin` directory.
 
@@ -273,6 +303,26 @@ After successfully building the project, you can run the game using the followin
    chmod +x ./bin/VoidContingency
    ```
 
+### macOS
+
+1. Navigate to the build directory:
+
+   ```bash
+   cd build
+   ```
+
+2. Run the executable:
+
+   ```bash
+   ./bin/VoidContingency
+   ```
+
+   If you encounter a permission error, you may need to make the executable file executable:
+
+   ```bash
+   chmod +x ./bin/VoidContingency
+   ```
+
 ### Command Line Arguments
 
 The game supports the following command line arguments:
@@ -289,6 +339,9 @@ Example usage:
 .\bin\VoidContingency.exe --fullscreen --resolution 1920x1080
 
 # Linux
+./bin/VoidContingency --fullscreen --resolution 1920x1080
+
+# macOS
 ./bin/VoidContingency --fullscreen --resolution 1920x1080
 ```
 
