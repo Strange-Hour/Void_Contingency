@@ -10,7 +10,7 @@ Void Contingency is a top-down 2D space game that combines tactical combat, reso
 
 - **Cooperative Multiplayer**: Work together with up to 4 players
 - **Unique Ship Classes**: Choose from various ship types with different capabilities
-- **Dynamic Shield System**: Ship-specific shield configurations and upgrade paths
+- **Dynamic System**: Ship-specific configurations and upgrade paths
 - **Crew Roles**: Captain, Engineering, Weapons, and Operations positions
 - **Procedural Generation**: Explore unique sectors with different challenges
 - **Resource Management**: Balance power, repairs, and combat resources
