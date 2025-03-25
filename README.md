@@ -26,6 +26,7 @@ void-contingency/
 │   └── graphics/             # Visual assets (sprites, textures, animations)
 ├── docs/                     # Project documentation
 │   ├── phase_one/           # Phase one development documentation
+│   ├── phase_two/           # Phase two development documentation
 │   ├── action_plan.md       # Development roadmap and milestones
 │   └── GDD.md              # Game Design Document
 ├── include/                  # Header files for the game engine and core systems
@@ -65,6 +66,10 @@ void-contingency/
 - **docs/**: Project documentation including:
 
   - **phase_one/**: Documentation specific to the first development phase
+  - **phase_two/**: Documentation for the second development phase
+    - **ship_system/**: Ship systems design and implementation details
+    - **game_loop/**: Core game loop and mechanics documentation
+    - **README.md**: Phase two overview and guidelines
   - **action_plan.md**: Development roadmap and milestone tracking
   - **GDD.md**: Comprehensive game design document
 
