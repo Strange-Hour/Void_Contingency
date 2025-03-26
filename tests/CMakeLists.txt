@@ -1,7 +1,6 @@
 # Add test executable
 add_executable(unit_tests
   unit/main.cpp
-  unit/core/example_test.cpp
   unit/core/GameTest.cpp
 )
 

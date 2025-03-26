@@ -14,25 +14,31 @@ Start with the ship system as it's the core of the game. Follow these tutorials 
    - Core ship properties and methods
    - Basic ship functionality
 
-2. **Component System** (`ship_system/component_system.md`)
+2. **Vector Math** (`ship_system/vector_math.md`)
+
+   - 2D vector mathematics for game development
+   - Position, velocity, and physics calculations
+   - Core mathematical operations for movement
+
+3. **Component System** (`ship_system/component_system.md`)
 
    - Builds on basic ship class
    - Component management
    - Component communication
 
-3. **Movement System** (`ship_system/movement_system.md`)
+4. **Movement System** (`ship_system/movement_system.md`)
 
    - Requires basic ship class
    - Ship movement and physics
    - Navigation capabilities
 
-4. **Ship Visualization** (`ship_system/visualization.md`)
+5. **Ship Visualization** (`ship_system/visualization.md`)
 
    - Requires basic ship class
    - Ship rendering
    - Visual effects
 
-5. **Collision System** (`ship_system/collision_system.md`)
+6. **Collision System** (`ship_system/collision_system.md`)
    - Requires basic ship class and movement system
    - Collision detection
    - Collision response
@@ -149,6 +155,7 @@ Finally, implement the UI systems:
 phase_two/
 ├── ship_system/              # Ship system implementation tutorials
 │   ├── basic_ship_class.md   # Tutorial for implementing the basic ship class
+│   ├── vector_math.md        # Tutorial for the 2D vector math system
 │   ├── component_system.md   # Tutorial for the ship component system
 │   ├── movement_system.md    # Tutorial for ship movement implementation
 │   ├── visualization.md      # Tutorial for ship visualization
