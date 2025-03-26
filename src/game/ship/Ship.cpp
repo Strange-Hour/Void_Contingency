@@ -13,7 +13,7 @@ Ship::Ship(const std::string& name)
 {
 }
 
-void Ship::addComponent(std::unique_ptr<Component> component) {
+void Ship::addComponent(std::unique_ptr<core::Component> component) {
     components_.push_back(std::move(component));
 }
 

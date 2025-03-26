@@ -9,7 +9,8 @@ enum class ComponentType {
     Shield,
     Power,
     Hull,
-    Sensor
+    Sensor,
+    Movement,
 };
 
 } // namespace game
