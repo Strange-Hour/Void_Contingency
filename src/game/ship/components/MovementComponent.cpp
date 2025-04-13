@@ -32,10 +32,8 @@ void MovementComponent::update(float deltaTime) {
             break;
     }
 
-    // Update ship transform
-    auto& transform = ship_->getTransform();
-    transform.rotation = rotation_;
-    transform.position += ship_->getVelocity() * deltaTime;
+    // Update the ship's rotation
+    ship_->setRotation(rotation_);
 }
 
 void MovementComponent::updateThrusterMode(float deltaTime) {

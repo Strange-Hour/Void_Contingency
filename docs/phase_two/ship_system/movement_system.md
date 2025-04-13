@@ -146,10 +146,8 @@ void MovementComponent::update(float deltaTime) {
             break;
     }
 
-    // Update ship transform
-    auto& transform = ship_->getTransform();
-    transform.rotation = rotation_;
-    transform.position += ship_->getVelocity() * deltaTime;
+    // Update the ship's rotation
+    ship_->setRotation(rotation_);
 }
 
 void MovementComponent::updateThrusterMode(float deltaTime) {
@@ -266,7 +264,46 @@ void MovementComponent::setAngularDeceleration(float deceleration) {
 } // namespace void_contingency
 ```
 
+### 3. Update Ship Class
+
+Add a method to update the rotation in the Ship class. Edit `include/game/ship/Ship.hpp`:
+
+```cpp
+// Basic properties
+const std::string& getName() const { return name_; }
+float getHealth() const { return health_; }
+float getMaxHealth() const { return maxHealth_; }
+const core::Transform& getTransform() const { return transform_; }
+
+// Rotation control
+void setRotation(float rotation) { transform_.rotation = rotation; }
+
+// Movement
+void setVelocity(const Vector2f& velocity) { velocity_ = velocity; }
+const Vector2f& getVelocity() const { return velocity_; }
+```
+
+This design ensures:
+
+1. The `MovementComponent` controls rotation by using `ship_->setRotation(rotation_)`
+2. Position updates are handled by the Ship class's own `update()` method (which adds velocity \* deltaTime to position)
+3. The component system respects proper encapsulation and const-correctness
+
 ## Key Concepts Explained
+
+### 1. Movement System Design
+
+The movement system is divided into three modes:
+
+1. **Thruster Mode**: Realistic physics-based movement with acceleration and deceleration
+2. **Impulse Mode**: Instant velocity changes with gradual deceleration
+3. **Hybrid Mode**: A blend of both modes for flexible gameplay
+
+The system is designed with a clear separation of responsibilities:
+
+- The `MovementComponent` handles velocity calculations and rotation
+- The `Ship` class handles updating position based on velocity in its own `update()` method
+- The transform is encapsulated in the `Ship` class with appropriate getters and setters
 
 ### Physics-Based Movement
 
