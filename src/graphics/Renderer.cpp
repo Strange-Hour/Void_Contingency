@@ -1,4 +1,4 @@
-#include "graphics/Renderer.hpp"
+#include "Renderer.hpp"
 #include <iostream>
 
 namespace void_contingency {

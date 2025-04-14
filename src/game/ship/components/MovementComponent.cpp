@@ -1,13 +1,11 @@
 #include "game/ship/components/MovementComponent.hpp"
+#include <algorithm>  // For std::clamp
 #include <cmath>
 
 namespace void_contingency {
 namespace game {
 
-MovementComponent::MovementComponent()
-    : ShipComponent(ComponentType::Movement)
-{
-}
+MovementComponent::MovementComponent() : ShipComponent(ComponentType::Movement) {}
 
 void MovementComponent::initialize() {
     // Initialize movement systems
@@ -18,7 +16,8 @@ void MovementComponent::shutdown() {
 }
 
 void MovementComponent::update(float deltaTime) {
-    if (!ship_) return;
+    if (!ship_)
+        return;
 
     switch (mode_) {
         case MovementMode::Thruster:
@@ -101,7 +100,7 @@ void MovementComponent::clampVelocity() {
 }
 
 void MovementComponent::clampAngularVelocity() {
-    const float maxAngularSpeed = 360.0f; // degrees per second
+    const float maxAngularSpeed = 360.0f;  // degrees per second
     angularVelocity_ = std::clamp(angularVelocity_, -maxAngularSpeed, maxAngularSpeed);
 }
 
@@ -146,5 +145,5 @@ void MovementComponent::setAngularDeceleration(float deceleration) {
     angularDeceleration_ = deceleration;
 }
 
-} // namespace game
-} // namespace void_contingency
+}  // namespace game
+}  // namespace void_contingency

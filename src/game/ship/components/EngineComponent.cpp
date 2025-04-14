@@ -1,12 +1,10 @@
 #include "game/ship/components/EngineComponent.hpp"
+#include <algorithm>  // For std::clamp
 
 namespace void_contingency {
 namespace game {
 
-EngineComponent::EngineComponent()
-    : ShipComponent(ComponentType::Engine)
-{
-}
+EngineComponent::EngineComponent() : ShipComponent(ComponentType::Engine) {}
 
 void EngineComponent::initialize() {
     // Initialize engine systems
@@ -17,7 +15,8 @@ void EngineComponent::shutdown() {
 }
 
 void EngineComponent::update(float deltaTime) {
-    if (!ship_) return;
+    if (!ship_)
+        return;
 
     // Calculate force based on thrust and efficiency
     float force = thrust_ * efficiency_;
@@ -41,5 +40,5 @@ float EngineComponent::getMaxThrust() const {
     return maxThrust_;
 }
 
-} // namespace game
-} // namespace void_contingency
+}  // namespace game
+}  // namespace void_contingency

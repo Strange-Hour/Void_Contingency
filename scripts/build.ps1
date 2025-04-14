@@ -21,11 +21,15 @@ if (-not (Test-Command "cmake")) {
     exit 1
 }
 
-# Create build directory if it doesn't exist
-if (-not (Test-Path $BuildDir)) {
-    Write-Host "Creating build directory..." -ForegroundColor Cyan
-    New-Item -ItemType Directory -Path $BuildDir | Out-Null
+# Clean build directory if it exists
+if (Test-Path $BuildDir) {
+    Write-Host "Cleaning build directory..." -ForegroundColor Cyan
+    Remove-Item -Path $BuildDir -Recurse -Force
 }
+
+# Create build directory
+Write-Host "Creating build directory..." -ForegroundColor Cyan
+New-Item -ItemType Directory -Path $BuildDir | Out-Null
 
 # Navigate to build directory
 Push-Location $BuildDir
@@ -35,14 +39,14 @@ try {
     Write-Host "Configuring project with CMake ($BuildType)..." -ForegroundColor Cyan
     cmake -DCMAKE_BUILD_TYPE=$BuildType $ProjectRoot
     if ($LASTEXITCODE -ne 0) {
-        throw "CMake configuration failed"
+        throw "CMake configuration failed. Check the CMake output for errors."
     }
 
     # Build the project
     Write-Host "Building project..." -ForegroundColor Cyan
     cmake --build . --config $BuildType
     if ($LASTEXITCODE -ne 0) {
-        throw "Build failed"
+        throw "Build failed. Check the build output for errors."
     }
 
     Write-Host "`nBuild completed successfully!" -ForegroundColor Green
@@ -57,6 +61,10 @@ try {
 
 } catch {
     Write-Host "Error: $_" -ForegroundColor Red
+    Write-Host "If you're having issues with SDL2 or SDL2_image, check that:" -ForegroundColor Yellow
+    Write-Host "- CMake is properly installed" -ForegroundColor Yellow
+    Write-Host "- Git is installed and in PATH" -ForegroundColor Yellow
+    Write-Host "- You have a working internet connection" -ForegroundColor Yellow
     exit 1
 } finally {
     Pop-Location
